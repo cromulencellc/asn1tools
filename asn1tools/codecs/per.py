@@ -543,7 +543,7 @@ class Decoder(object):
 class Type(BaseType):
 
     def __init__(self, name, type_name):
-        super().__init__(name, type_name)
+        super(Type, self).__init__(name, type_name)
         self.module_name = None
         self.tag = None
 

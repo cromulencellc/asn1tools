@@ -44,7 +44,7 @@ class Type(ber.Type):
         if not Class.APPLICATION & flags:
             flags |= Class.CONTEXT_SPECIFIC
 
-        super().set_tag(number, flags)
+        super(Type, self).set_tag(number, flags)
 
 
 class StringType(Type):

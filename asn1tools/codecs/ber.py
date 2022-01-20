@@ -432,7 +432,7 @@ class Type(BaseType):
         :param int number: Tag number
         :param flags:
         """
-        super().__init__(name, type_name)
+        super(Type, self).__init__(name, type_name)
         if number is None:
             self.tag = None
             self.tag_len = None

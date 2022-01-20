@@ -45,7 +45,7 @@ def indent_xml(element, indent, level=0):
 class Type(BaseType):
 
     def __init__(self, name, type_name):
-        super().__init__(name.replace(' ', '_'), type_name)
+        super(Type, self).__init__(name.replace(' ', '_'), type_name)
 
     def set_size_range(self, minimum, maximum, has_extension_marker):
         pass

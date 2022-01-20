@@ -294,7 +294,7 @@ class Decoder(object):
 class Type(BaseType):
 
     def __init__(self, name, type_name, number, flags=0):
-        super().__init__(name, type_name)
+        super(Type, self).__init__(name, type_name)
         self.module_name = None
 
         if number is None:
